@@ -1,0 +1,11 @@
+<com-swiper></com-swiper>
+<view class="main">
+  <view class="title">title</view>
+  <view class="description">description</view>
+  <view class="price">$7</view>
+  <view class="other">other</view>
+</view>
+<view class="evaluate">
+  <view class="">1</view>
+  <view class="">2</view>
+</view>

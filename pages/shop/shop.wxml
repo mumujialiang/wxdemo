@@ -1,0 +1,23 @@
+<view class="shop">
+  <image class="banner" mode="aspectFill" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586248876717&di=a527d77482f7c04cdafddc86489ca9ee&imgtype=0&src=http%3A%2F%2Ft8.baidu.com%2Fit%2Fu%3D2247852322%2C986532796%26fm%3D79%26app%3D86%26f%3DJPEG%3Fw%3D1280%26h%3D853"></image>
+  <view class="content">
+    <view class="nav">
+      <scroll-view class="nav-inner" scroll-y scroll-top="{{navTop}}" scroll-with-animation>
+        <view class="nav-item {{index==active?'nav-item-active':''}}" wx:for="{{info}}" wx:key="index" bindtap="clickNav" data-index="{{index}}">{{item.className}}</view>
+      </scroll-view>
+    </view>
+    <view class="list">
+      <view class="list-item" wx:for="{{info}}" wx:key="index">
+        <view class="title {{active==index?'sticky-title':''}}">{{item.className}}</view>
+        <van-card wx:for="{{item.goods}}" wx:for-item="citem" wx:for-index="cindex" wx:key="cindex" custom-class="custom-class" price="{{citem.price}}" desc="{{citem.description}}" title="{{citem.title}}" thumb="{{citem.img}}">
+          <view slot="footer">
+            <!-- <van-stepper value="{{ 1 }}" /> -->
+            {{citem.num}}
+            <van-icon name="add-o" size="50rpx" color="red" bindtap="addNum" data-info-index="{{index}}" data-goods-index="{{cindex}}"/>
+          </view>
+        </van-card>
+      </view>
+    </view>
+  </view>
+</view>
+<van-submit-bar price="{{ 3050 }}" button-text="提交订单" bind:submit="onSubmit">详情</van-submit-bar>

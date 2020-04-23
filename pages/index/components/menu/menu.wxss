@@ -1,0 +1,29 @@
+
+
+.menu {
+  width: 100%;
+  
+  /* padding: 20rpx; */
+}
+
+.menu-item {
+  width: 25%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddddd;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.menu-inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* border-radius: 20rpx; */
+  overflow: hidden
+}

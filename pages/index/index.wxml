@@ -1,0 +1,28 @@
+<!-- index.wxml -->
+<view class="index">
+  <view class="margin-bottom">
+    <com-swiper></com-swiper>
+  </view>
+  <view class="margin-bottom">
+    <com-menu></com-menu>
+  </view>
+  <view class="margin-bottom" style="background-color: #ffffff">
+    <van-tabs active="{{0}}" sticky>
+      <van-tab title="标签 1">
+        <view style="padding:20rpx">
+          <com-card></com-card>
+        </view>
+      </van-tab>
+      <van-tab title="标签 1">
+        <view style="padding:20rpx">
+          <com-card></com-card>
+        </view>
+      </van-tab>
+      <van-tab title="标签 1">
+        <view style="padding:20rpx">
+          <com-card></com-card>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

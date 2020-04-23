@@ -1,0 +1,8 @@
+/**index.wxss**/
+.index{
+  background-color: #eeeeee
+}
+
+.margin-bottom{
+  margin-bottom: 20rpx
+}

@@ -1,0 +1,17 @@
+.main{
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  padding: 20rpx
+}
+
+.title{
+  font-weight: bold;
+}
+.description{
+  color: #999999;
+  font-size: 25rpx
+}
+.other{
+  color: #999999;
+  font-size: 25rpx
+}

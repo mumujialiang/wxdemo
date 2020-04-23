@@ -1,0 +1,8 @@
+<view class="title">
+  <view class="title-item" wx:for="{{3}}" wx:key="{{index}}" bindtap="clickTitle" data-index="{{index}}">{{index}}</view>
+</view>
+<view class="tabs">
+  <view class="tabs-item" wx:for="{{3}}" wx:key="{{index}}" wx:if="{{tabsIndex==index}}">
+    <com-card wx:for="{{3}}" wx:key="{{index}}"></com-card>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/index/components/menu/menu.wxml-->
+<!-- <view class="menu">
+  <view class="menu-inner">
+    <view class="menu-item" wx:for="{{menuList}}" wx:key="index">
+      <image class="icon" src="icon/{{item.icon}}"></image>
+    </view>
+  </view>
+</view> -->
+<view class="menu">
+  <van-grid>
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+    <van-grid-item icon="photo-o" text="文字" />
+  </van-grid>
+</view>

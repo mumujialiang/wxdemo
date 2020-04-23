@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "com-swiper": "/components/swiper/swiper",
+    "com-card": "/components/card/card",
+    "com-menu": "components/menu/menu",
+    "com-tabs": "/components/tabs/tabs",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  }
+}
